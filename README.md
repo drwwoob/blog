@@ -1,7 +1,9 @@
-# A Blog Starter App
+# A Blog App
 
-This is a trivial blog app, started with create-react-app.
+Trying to make a blog app.
 
-It works entirely within memory, so reloads blow everything away except for the first two mock articles.
+So far, whatever I put in the files, App.css or Rules for firework won't give effect.
 
-This repo is designed for you to fork and extend with (1) better CSS and (2) a real back end, with authentication and a database.
+Couldn't write in articles either even given access.
+
+I want to go to sleep ;(

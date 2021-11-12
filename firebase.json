@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "blogv2-817af",
     "public": "build",
     "ignore": [
       "firebase.json",

@@ -1,6 +1,5 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
@@ -12,15 +11,15 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBNk7St3sf3l61Rhiao-zZ8pjOHoQDKL6I",
   authDomain: "blog-817af.firebaseapp.com",
+  databaseURL: "https://blog-817af-default-rtdb.firebaseio.com",
   projectId: "blog-817af",
   storageBucket: "blog-817af.appspot.com",
   messagingSenderId: "43243525777",
-  appId: "1:43243525777:web:8ee02d07e8953d6a1f9130",
-  measurementId: "G-9G3QGZBDGQ"
+  appId: "1:43243525777:web:0641417fb18ce21e1f9130",
+  measurementId: "G-5XJGXQ2Y97"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);

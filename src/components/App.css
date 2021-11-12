@@ -26,7 +26,8 @@ form {
 form input,
 form textarea {
   margin-bottom: 10px;
-  width: 300px;
+  font-size: 14px;
+  width: 90%;
 }
 
 nav,

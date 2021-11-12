@@ -2,13 +2,6 @@
 // No other part of the app knows how the data is stored. If anyone wants
 // to read or write data, they have to go through this service.
 
-// For this starter code, we use mock data, that is, data in memory that
-// is pretty arbitrary. The service functions to create and fetch articles
-// will just work on this fake data in memory.
-
-// This intent is for you to fork this starter code and then replace the
-// bodies of the service functions with code that fetches from a *real*
-// database like Firebase Firestore.
 import { db } from "../firebaseConfig"
 import { collection, query, getDocs, addDoc, orderBy, limit, Timestamp } from "firebase/firestore"
 
@@ -18,6 +11,8 @@ export async function createArticle({ title, body }) {
   return { id: docRef.id, ...data }
 }
 
+// NOT FINISHED: This only gets the first 20 articles. In a real app,
+// you implement pagination.
 export async function fetchArticles() {
   const snapshot = await getDocs(
     query(collection(db, "articles"), orderBy("date", "desc"), limit(20))
